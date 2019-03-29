@@ -33,23 +33,30 @@
 
 ### 流程
 1. 一進入APP，會顯示什麼都沒設定的頁面一，並在console印出：
+
 ![](https://i.imgur.com/wxJmlFy.png)
 
 2. 打開第一個section的第一個cell中的**UISwitch**，畫面會顯示可編輯的項目，關閉UISwitch會隱藏可編輯的項目，可編輯的項目的格式如下圖：
+
 ![](https://i.imgur.com/KguieJI.png)
 
 
 3. 按下第一個section的第一個以外cell會跳轉Editing頁面,Label會顯示："請輸入*XXX*:"，按下Button後返回會顯在cell上，都編輯完返回主頁，主頁會像這樣：
+
 ![](https://i.imgur.com/PfwGU3k.png)
+
 Console 會印出：
+
 ![](https://i.imgur.com/aLW2BiQ.png)
 
 
 4. 按下第二個section的第一個cell會跳轉Food頁面，Select cell 會打勾，像這樣：
+
 ![](https://i.imgur.com/ahI6WMC.png)
 
 
 5. 返回主頁，第二個section會顯示勾選了的食物，像這樣：
+
 ![](https://i.imgur.com/PZLdkQ8.png)
 
 6. 在Food頁面，打了勾的cell再按會取消打勾，主頁只會顯示有打勾的食物
