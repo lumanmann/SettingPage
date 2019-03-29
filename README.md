@@ -43,7 +43,7 @@
 ![](https://i.imgur.com/KguieJI.png)
 
 
-3. 按下第一個section的第一個以外cell會跳轉Editing頁面,Label會顯示："請輸入*XXX*:"，按下Button後返回會顯在cell上，都編輯完返回主頁，主頁會像這樣：
+3. 按下第一個section的第一個以外cell會跳轉Editing頁面,Label會顯示："請輸入*XXX*:"，按下Save Button後再返回主頁，主頁會更新，像這樣：
 
 ![](https://i.imgur.com/PfwGU3k.png)
 
