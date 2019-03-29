@@ -12,6 +12,7 @@
 第一個section的第一個cell包括一個**UISwitch**
 第二個section的第一個cell會有**indicator**圖示
 像這樣：
+
 ![](https://i.imgur.com/U1A9Vb4.png)
 
 ### 頁面二Editing頁面 包括：
@@ -19,12 +20,14 @@
 * Text Field * 1
 * Button * 1
 像這樣：
+
 ![](https://i.imgur.com/QczVvpA.png)
 
 ### 頁面三Food頁面 包括：
 * Right Bar Button Item * 1(Add 樣式)
 * Tabel View * 1 (section * 1，cell 若干)
 像這樣：
+
 ![](https://i.imgur.com/D058UL5.png)
 
 
