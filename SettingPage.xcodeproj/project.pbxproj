@@ -13,6 +13,7 @@
 		B4886D6D22488F2B0020B50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4886D6C22488F2B0020B50D /* Assets.xcassets */; };
 		B4886D7022488F2B0020B50D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4886D6E22488F2B0020B50D /* LaunchScreen.storyboard */; };
 		B4D3E758224E3B3200EAAED2 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D3E757224E3B3200EAAED2 /* UserInfo.swift */; };
+		B4D3E75A224E3C0400EAAED2 /* cell in Resources */ = {isa = PBXBuildFile; fileRef = B4D3E759224E3C0300EAAED2 /* cell */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B4886D6F22488F2B0020B50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4886D7122488F2B0020B50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D3E757224E3B3200EAAED2 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		B4D3E759224E3C0300EAAED2 /* cell */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cell; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		B4886D6422488F280020B50D /* SettingPage */ = {
 			isa = PBXGroup;
 			children = (
+				B4D3E759224E3C0300EAAED2 /* cell */,
 				B4D3E756224E3B1500EAAED2 /* Model */,
 				B4886D6522488F280020B50D /* AppDelegate.swift */,
 				B4886D6722488F280020B50D /* ViewController.swift */,
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D3E75A224E3C0400EAAED2 /* cell in Resources */,
 				B4886D7022488F2B0020B50D /* LaunchScreen.storyboard in Resources */,
 				B4886D6D22488F2B0020B50D /* Assets.xcassets in Resources */,
 				B4886D6B22488F280020B50D /* Main.storyboard in Resources */,

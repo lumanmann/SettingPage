@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OptionTableViewCell" customModule="SettingPage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MoG-zS-JWS">
+                        <rect key="frame" x="20" y="0.0" width="290" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhW-WP-Dw3">
+                                <rect key="frame" x="0.0" y="11.5" width="224" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Nb-f4-cN4">
+                                <rect key="frame" x="234" y="6.5" width="58" height="31"/>
+                                <connections>
+                                    <action selector="switchClicked:" destination="KGk-i7-Jjw" eventType="valueChanged" id="ZML-k7-Xnj"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FhW-WP-Dw3" firstAttribute="width" secondItem="0Nb-f4-cN4" secondAttribute="width" multiplier="8:2" id="0Gl-pe-MNG"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MoG-zS-JWS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ikX-Mr-Fsq"/>
+                    <constraint firstItem="MoG-zS-JWS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jsD-Lf-yv1"/>
+                    <constraint firstAttribute="bottom" secondItem="MoG-zS-JWS" secondAttribute="bottom" id="rkq-pX-OEL"/>
+                    <constraint firstAttribute="trailing" secondItem="MoG-zS-JWS" secondAttribute="trailing" constant="10" id="uRs-ax-4Q6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="title" destination="FhW-WP-Dw3" id="L3C-lL-K7U"/>
+                <outlet property="uiswitch" destination="0Nb-f4-cN4" id="vWJ-uN-6EN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
