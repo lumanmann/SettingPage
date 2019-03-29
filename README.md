@@ -10,7 +10,9 @@
 * Tabel View * 1 (section * 2，cell 各一)
 
 第一個section的第一個cell包括一個**UISwitch**
+
 第二個section的第一個cell會有**indicator**圖示
+
 像這樣：
 
 ![](https://i.imgur.com/U1A9Vb4.png)
