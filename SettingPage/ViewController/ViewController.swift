@@ -16,7 +16,7 @@ enum EditingType: String {
 
 class ViewController: UITableViewController{
 
-    let settingOption : [EditingType] = [.name, .account , .password]
+    let settingOption : [EditingType] = [.name, .account , .password] // 選項
     var user = UserInfo()
     
     override func viewDidLoad() {
@@ -69,14 +69,6 @@ class ViewController: UITableViewController{
         return 40
     }
     
-    override func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
-        if indexPath.section == 1 {
-            let newIndexPath = IndexPath(row: 0, section: indexPath.section)
-            return super.tableView(tableView, indentationLevelForRowAt: newIndexPath)
-        }
-        return super.tableView(tableView, indentationLevelForRowAt: indexPath)
-    }
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 1 {
@@ -96,6 +88,9 @@ class ViewController: UITableViewController{
         if indexPath.section == 0, indexPath.row == 0{
             return configSectiononeOptionCell() ?? UITableViewCell()
         }  else if indexPath.section == 0 {
+            // 拿到storyboard 設定的cell
+            // 如果用self.tableView.cellForRowAt()去拿會產生inifinite loop (不斷進cellForRowAt())
+            // 要用覆寫前的cellForRowAt才會拿到原本storyboard 設定的cell
             let cell = super.tableView(tableView, cellForRowAt: indexPath)
             cell.detailTextLabel?.textColor = .blue
             let opt = settingOption[indexPath.row-1]
@@ -106,12 +101,8 @@ class ViewController: UITableViewController{
             case .account:
                 cell.detailTextLabel?.text = user.account ?? "無"
             case.password:
-                var str = ""
                 if let pw = user.password, pw.count > 0 {
-                    for _ in pw {
-                        str += "*"
-                    }
-                    cell.detailTextLabel?.text = str
+                    cell.detailTextLabel?.text = pw.showPasswordStyle(a: "+")
                 } else {
                     cell.detailTextLabel?.text = "尚未設定"
                 }
@@ -152,3 +143,13 @@ class ViewController: UITableViewController{
     
 }
 
+
+extension String {
+    func showPasswordStyle(a: String) -> String {
+        var str = ""
+        for _ in self {
+            str += a
+        }
+        return str
+    }
+}
